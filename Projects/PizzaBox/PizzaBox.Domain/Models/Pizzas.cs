@@ -30,17 +30,7 @@ namespace PizzaBox.Domain.Models
         {
 
         }
-
-        public bool ValidateToppingRange(int toppingsCount)
-        {
-            if (toppingsCount < 2 || toppingsCount > 5)
-            {
-                return false;
-            }
-
-            return true;
-        }
-
+        
     }
 
     public class VeggiePizza : APizza

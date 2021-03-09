@@ -27,6 +27,18 @@ namespace PizzaBox.Domain.Abstracts
 
         public List<Topping> Toppings {get; set;}
 
+        public bool ValidateToppingRange(int toppingsCount)
+        {
+            if (toppingsCount < 2 || toppingsCount > 5)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+
+
         private void FactoryMethod()
         {
             AddCrust();
